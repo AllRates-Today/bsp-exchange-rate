@@ -1,10 +1,10 @@
 # Bangko Sentral ng Pilipinas Exchange Rate API client
 
-Official **Bangko Sentral ng Pilipinas** (the Philippines) daily exchange rates in Node.js / TypeScript — ~30 currencies against the PHP, with history back to 2026. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
+Official **Bangko Sentral ng Pilipinas** (the Philippines) daily exchange rates in Node.js / TypeScript — 31 currencies against the PHP, with history back to 2026. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
 
 These are the *published central bank rates* required for tax filings, customs valuations, audits, and compliant invoicing — not moving market rates. Every response carries the publisher's own publication date.
 
-Powered by [AllRatesToday](https://allratestoday.com/central-bank-rates-api/bsp/). Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — 300 requests/month, no credit card.
+Powered by [AllRatesToday](https://allratestoday.com/central-bank-rates-api/bsp/). Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required.
 
 ## Install
 
@@ -41,6 +41,14 @@ const series = await getHistory(
   { apiKey: 'art_live_...' }
 );
 ```
+
+## Currencies covered
+
+Bangko Sentral ng Pilipinas currently publishes rates covering **32 currencies** (as of the latest table):
+
+`AED` · `ARS` · `AUD` · `BHD` · `BND` · `BRL` · `CAD` · `CHF` · `CNY` · `DKK` · `EUR` · `GBP` · `HKD` · `IDR` · `INR` · `JPY` · `KRW` · `MXN` · `MYR` · `NOK` · `NZD` · `PHP` · `PKR` · `SAR` · `SEK` · `SGD` · `SYP` · `THB` · `TWD` · `USD` · `VES` · `ZAR`
+
+Pairs the central bank does not print directly are resolved from this table (see below).
 
 ## Published vs derived rates
 

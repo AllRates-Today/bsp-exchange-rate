@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'PHP', { apiKey: 'art_live_...' });
 {
   bank: 'bsp',
   name: 'Bangko Sentral ng Pilipinas',
-  rate_date: '2026-09-25',   // Bangko Sentral ng Pilipinas's own publication date
+  rate_date: '2026-10-06',   // Bangko Sentral ng Pilipinas's own publication date
   source: 'USD',
   target: 'PHP',
-  rate: 62.756,
+  rate: 62.622,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bsp',
   name: 'Bangko Sentral ng Pilipinas',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "USD", "quote": "PHP", "type": "reference", "value": 62.756 },
+    { "base": "USD", "quote": "PHP", "type": "reference", "value": 62.622 },
     // … the rest of the published table (31 currencies vs PHP)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bsp-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'PHP', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'USD', target: 'PHP', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'PHP',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 62.756, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 62.622, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'

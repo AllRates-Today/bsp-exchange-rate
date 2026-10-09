@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bsp-exchange-rate.svg)](https://github.com/AllRates-Today/bsp-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bsp-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/PHP today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbsp%3Fsource%3DUSD%26target%3DPHP&query=%24.rate&label=USD%2FPHP%20published%20by%20Bangko%20Sentral%20ng%20Pilipinas&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bsp/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbsp%3Fsource%3DUSD%26target%3DPHP&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bsp/)
 
 **Official Bangko Sentral ng Pilipinas (the Philippines) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Bangko Sentral ng Pilipinas itself prints, every business day.**
 
@@ -32,6 +34,50 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Bangko Sentral ng Pilipinas table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by Bangko Sentral ng Pilipinas — 31 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | PHP | reference | 17.0894 |
+| ARS | PHP | reference | 0.0414 |
+| AUD | PHP | reference | 43.6789 |
+| BHD | PHP | reference | 166.4439 |
+| BND | PHP | reference | 48.8337 |
+| BRL | PHP | reference | 12.5106 |
+| CAD | PHP | reference | 44.1206 |
+| CHF | PHP | reference | 75.4943 |
+| CNY | PHP | reference | 9.3634 |
+| DKK | PHP | reference | 9.418 |
+| EUR | PHP | reference | 70.3983 |
+| GBP | PHP | reference | 83.052 |
+| HKD | PHP | reference | 7.9981 |
+| IDR | PHP | reference | 0.0035 |
+| INR | PHP | reference | 0.6485 |
+| JPY | PHP | reference | 0.3978 |
+| KRW | PHP | reference | 0.0468 |
+| MXN | PHP | reference | 3.4578 |
+| MYR | PHP | reference | 15.3537 |
+| NOK | PHP | reference | 6.5799 |
+| NZD | PHP | reference | 35.1615 |
+| PKR | PHP | reference | 0.2268 |
+| SAR | PHP | reference | 16.7243 |
+| SEK | PHP | reference | 6.3059 |
+| SGD | PHP | reference | 49.0245 |
+| SYP | PHP | reference | 0.5166 |
+| THB | PHP | reference | 1.8657 |
+| TWD | PHP | reference | 1.9664 |
+| USD | PHP | reference | 62.766 |
+| VES | PHP | reference | 0.0719 |
+| ZAR | PHP | reference | 3.7808 |
+
+Source: [Official rates published by BSP, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bsp/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 

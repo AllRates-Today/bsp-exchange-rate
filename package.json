@@ -1,6 +1,6 @@
 {
   "name": "bsp-exchange-rate",
-  "version": "1.3.6",
+  "version": "1.3.7",
   "description": "Official Bangko Sentral ng Pilipinas (Philippines) daily exchange rates — 31 currencies vs PHP, history since 2026. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "bsp",

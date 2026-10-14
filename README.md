@@ -42,41 +42,41 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-13** by Bangko Sentral ng Pilipinas — 31 rates. Updated 2026-10-13.
+Published **2026-10-14** by Bangko Sentral ng Pilipinas — 31 rates. Updated 2026-10-14.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | PHP | reference | 17.083 |
-| ARS | PHP | reference | 0.0413 |
-| AUD | PHP | reference | 43.6601 |
-| BHD | PHP | reference | 166.2621 |
-| BND | PHP | reference | 48.8241 |
-| BRL | PHP | reference | 12.5815 |
-| CAD | PHP | reference | 43.9472 |
-| CHF | PHP | reference | 75.2266 |
-| CNY | PHP | reference | 9.3725 |
-| DKK | PHP | reference | 9.3661 |
-| EUR | PHP | reference | 70.0105 |
-| GBP | PHP | reference | 82.897 |
-| HKD | PHP | reference | 7.9949 |
+| AED | PHP | reference | 17.1058 |
+| ARS | PHP | reference | 0.0415 |
+| AUD | PHP | reference | 43.8463 |
+| BHD | PHP | reference | 166.4706 |
+| BND | PHP | reference | 48.9147 |
+| BRL | PHP | reference | 12.4995 |
+| CAD | PHP | reference | 44.2032 |
+| CHF | PHP | reference | 75.4576 |
+| CNY | PHP | reference | 9.3871 |
+| DKK | PHP | reference | 9.4123 |
+| EUR | PHP | reference | 70.3588 |
+| GBP | PHP | reference | 83.2507 |
+| HKD | PHP | reference | 8.0055 |
 | IDR | PHP | reference | 0.0035 |
-| INR | PHP | reference | 0.6551 |
-| JPY | PHP | reference | 0.3956 |
-| KRW | PHP | reference | 0.0471 |
-| MXN | PHP | reference | 3.4402 |
-| MYR | PHP | reference | 15.3734 |
-| NOK | PHP | reference | 6.5606 |
-| NZD | PHP | reference | 35.046 |
-| PKR | PHP | reference | 0.2267 |
-| SAR | PHP | reference | 16.7059 |
-| SEK | PHP | reference | 6.26 |
-| SGD | PHP | reference | 49.0148 |
-| SYP | PHP | reference | 0.5163 |
-| THB | PHP | reference | 1.8678 |
-| TWD | PHP | reference | 1.9649 |
-| USD | PHP | reference | 62.739 |
+| INR | PHP | reference | 0.6594 |
+| JPY | PHP | reference | 0.3969 |
+| KRW | PHP | reference | 0.0469 |
+| MXN | PHP | reference | 3.4229 |
+| MYR | PHP | reference | 15.3834 |
+| NOK | PHP | reference | 6.6105 |
+| NZD | PHP | reference | 35.2391 |
+| PKR | PHP | reference | 0.2271 |
+| SAR | PHP | reference | 16.7291 |
+| SEK | PHP | reference | 6.3083 |
+| SGD | PHP | reference | 49.1058 |
+| SYP | PHP | reference | 0.517 |
+| THB | PHP | reference | 1.8732 |
+| TWD | PHP | reference | 1.9555 |
+| USD | PHP | reference | 62.826 |
 | VES | PHP | reference | 0.0717 |
-| ZAR | PHP | reference | 3.7938 |
+| ZAR | PHP | reference | 3.8119 |
 
 Source: [Official rates published by BSP, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bsp/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->

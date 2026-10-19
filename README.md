@@ -33,50 +33,53 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/bsp').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest Bangko Sentral ng Pilipinas table](https://allratestoday.com/api/open/central-bank/bsp/table.svg)](https://allratestoday.com/central-bank-rates-api/bsp/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by Bangko Sentral ng Pilipinas — 31 rates. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by Bangko Sentral ng Pilipinas — 31 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | PHP | reference | 17.1665 |
-| ARS | PHP | reference | 0.0417 |
-| AUD | PHP | reference | 43.6236 |
-| BHD | PHP | reference | 167.0394 |
-| BND | PHP | reference | 48.9929 |
-| BRL | PHP | reference | 12.3638 |
-| CAD | PHP | reference | 44.4414 |
-| CHF | PHP | reference | 76.2474 |
-| CNY | PHP | reference | 9.4224 |
-| DKK | PHP | reference | 9.4628 |
-| EUR | PHP | reference | 70.7347 |
-| GBP | PHP | reference | 83.7102 |
-| HKD | PHP | reference | 8.0346 |
+| AED | PHP | reference | 17.1726 |
+| ARS | PHP | reference | 0.0416 |
+| AUD | PHP | reference | 43.9079 |
+| BHD | PHP | reference | 167.1561 |
+| BND | PHP | reference | 49.0725 |
+| BRL | PHP | reference | 12.4522 |
+| CAD | PHP | reference | 44.6689 |
+| CHF | PHP | reference | 76.4924 |
+| CNY | PHP | reference | 9.4314 |
+| DKK | PHP | reference | 9.4477 |
+| EUR | PHP | reference | 70.6299 |
+| GBP | PHP | reference | 83.9624 |
+| HKD | PHP | reference | 8.0372 |
 | IDR | PHP | reference | 0.0035 |
-| INR | PHP | reference | 0.6633 |
-| JPY | PHP | reference | 0.3991 |
-| KRW | PHP | reference | 0.047 |
-| MXN | PHP | reference | 3.4287 |
-| MYR | PHP | reference | 15.4532 |
-| NOK | PHP | reference | 6.6692 |
-| NZD | PHP | reference | 35.4335 |
-| PKR | PHP | reference | 0.2278 |
-| SAR | PHP | reference | 16.8059 |
-| SEK | PHP | reference | 6.343 |
-| SGD | PHP | reference | 49.184 |
-| SYP | PHP | reference | 0.5189 |
-| THB | PHP | reference | 1.8821 |
-| TWD | PHP | reference | 1.9485 |
-| USD | PHP | reference | 63.049 |
+| INR | PHP | reference | 0.6642 |
+| JPY | PHP | reference | 0.3993 |
+| KRW | PHP | reference | 0.0472 |
+| MXN | PHP | reference | 3.4126 |
+| MYR | PHP | reference | 15.4616 |
+| NOK | PHP | reference | 6.6831 |
+| NZD | PHP | reference | 35.6586 |
+| PKR | PHP | reference | 0.2281 |
+| SAR | PHP | reference | 16.8065 |
+| SEK | PHP | reference | 6.3476 |
+| SGD | PHP | reference | 49.2642 |
+| SYP | PHP | reference | 0.519 |
+| THB | PHP | reference | 1.886 |
+| TWD | PHP | reference | 1.9448 |
+| USD | PHP | reference | 63.068 |
 | VES | PHP | reference | 0.0718 |
-| ZAR | PHP | reference | 3.8238 |
+| ZAR | PHP | reference | 3.8281 |
+
+</details>
 
 Source: [Official rates published by BSP, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bsp/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -349,7 +352,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/bsp-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/bsp-exchange-rate)
 
 ## 📜 License

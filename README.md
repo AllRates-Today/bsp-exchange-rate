@@ -47,41 +47,41 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Bangko Sentral ng Pilipinas — 31 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Bangko Sentral ng Pilipinas — 31 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | PHP | reference | 17.423 |
+| AED | PHP | reference | 17.4415 |
 | ARS | PHP | reference | 0.0416 |
-| AUD | PHP | reference | 44.9409 |
-| BHD | PHP | reference | 169.6249 |
-| BND | PHP | reference | 49.7713 |
-| BRL | PHP | reference | 11.9551 |
-| CAD | PHP | reference | 45.5614 |
-| CHF | PHP | reference | 77.2465 |
-| CNY | PHP | reference | 9.5982 |
-| DKK | PHP | reference | 9.5283 |
-| EUR | PHP | reference | 71.2092 |
-| GBP | PHP | reference | 85.1528 |
-| HKD | PHP | reference | 8.1573 |
+| AUD | PHP | reference | 45.1758 |
+| BHD | PHP | reference | 169.8555 |
+| BND | PHP | reference | 49.8103 |
+| BRL | PHP | reference | 11.9781 |
+| CAD | PHP | reference | 45.7807 |
+| CHF | PHP | reference | 77.359 |
+| CNY | PHP | reference | 9.6101 |
+| DKK | PHP | reference | 9.5612 |
+| EUR | PHP | reference | 71.4665 |
+| GBP | PHP | reference | 85.3869 |
+| HKD | PHP | reference | 8.1655 |
 | IDR | PHP | reference | 0.0035 |
 | INR | PHP | reference | 0.6728 |
-| JPY | PHP | reference | 0.4053 |
-| KRW | PHP | reference | 0.0482 |
-| MXN | PHP | reference | 3.43 |
-| MYR | PHP | reference | 15.6572 |
-| NOK | PHP | reference | 6.8552 |
-| NZD | PHP | reference | 36.3469 |
-| PKR | PHP | reference | 0.2312 |
-| SAR | PHP | reference | 17.0488 |
-| SEK | PHP | reference | 6.4322 |
-| SGD | PHP | reference | 49.9656 |
-| SYP | PHP | reference | 0.5266 |
-| THB | PHP | reference | 1.8966 |
-| TWD | PHP | reference | 1.9744 |
-| USD | PHP | reference | 63.991 |
-| VES | PHP | reference | 0.0722 |
-| ZAR | PHP | reference | 3.8505 |
+| JPY | PHP | reference | 0.4061 |
+| KRW | PHP | reference | 0.0477 |
+| MXN | PHP | reference | 3.4397 |
+| MYR | PHP | reference | 15.7243 |
+| NOK | PHP | reference | 6.9288 |
+| NZD | PHP | reference | 36.0215 |
+| PKR | PHP | reference | 0.2318 |
+| SAR | PHP | reference | 17.0765 |
+| SEK | PHP | reference | 6.473 |
+| SGD | PHP | reference | 50.0047 |
+| SYP | PHP | reference | 0.5272 |
+| THB | PHP | reference | 1.8997 |
+| TWD | PHP | reference | 1.9767 |
+| USD | PHP | reference | 64.061 |
+| VES | PHP | reference | 0.0723 |
+| ZAR | PHP | reference | 3.8574 |
 
 </details>
 
@@ -246,6 +246,7 @@ The Bangko Sentral ng Pilipinas publishes its Reference Exchange Rate Bulletin e
 
 - Publisher's own page: [Reference Exchange Rate Bulletin](https://www.bsp.gov.ph/SitePages/Statistics/ExchangeRate.aspx) · [www.bsp.gov.ph](https://www.bsp.gov.ph)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Bangko Sentral ng Pilipinas rates page](https://allratestoday.com/central-bank-rates-api/bsp/)
+- In the API: usually by **13:30 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers

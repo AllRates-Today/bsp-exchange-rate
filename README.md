@@ -24,64 +24,49 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Bangko Sentral ng Pilipinas table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/bsp?source=USD&target=PHP"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/bsp').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Bangko Sentral ng Pilipinas table](https://allratestoday.com/api/open/central-bank/bsp/table.svg)](https://allratestoday.com/central-bank-rates-api/bsp/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Bangko Sentral ng Pilipinas — 31 rates. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Bangko Sentral ng Pilipinas — 31 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | PHP | reference | 17.4415 |
-| ARS | PHP | reference | 0.0416 |
-| AUD | PHP | reference | 45.1758 |
-| BHD | PHP | reference | 169.8555 |
-| BND | PHP | reference | 49.8103 |
-| BRL | PHP | reference | 11.9781 |
-| CAD | PHP | reference | 45.7807 |
-| CHF | PHP | reference | 77.359 |
-| CNY | PHP | reference | 9.6101 |
-| DKK | PHP | reference | 9.5612 |
-| EUR | PHP | reference | 71.4665 |
-| GBP | PHP | reference | 85.3869 |
-| HKD | PHP | reference | 8.1655 |
+| AED | PHP | reference | 17.3851 |
+| ARS | PHP | reference | 0.0415 |
+| AUD | PHP | reference | 44.8752 |
+| BHD | PHP | reference | 169.2565 |
+| BND | PHP | reference | 49.7096 |
+| BRL | PHP | reference | 11.8572 |
+| CAD | PHP | reference | 45.6379 |
+| CHF | PHP | reference | 77.4903 |
+| CNY | PHP | reference | 9.5857 |
+| DKK | PHP | reference | 9.5511 |
+| EUR | PHP | reference | 71.3865 |
+| GBP | PHP | reference | 85.4404 |
+| HKD | PHP | reference | 8.1384 |
 | IDR | PHP | reference | 0.0035 |
-| INR | PHP | reference | 0.6728 |
-| JPY | PHP | reference | 0.4061 |
+| INR | PHP | reference | 0.6708 |
+| JPY | PHP | reference | 0.405 |
 | KRW | PHP | reference | 0.0477 |
-| MXN | PHP | reference | 3.4397 |
-| MYR | PHP | reference | 15.7243 |
-| NOK | PHP | reference | 6.9288 |
-| NZD | PHP | reference | 36.0215 |
-| PKR | PHP | reference | 0.2318 |
-| SAR | PHP | reference | 17.0765 |
-| SEK | PHP | reference | 6.473 |
-| SGD | PHP | reference | 50.0047 |
-| SYP | PHP | reference | 0.5272 |
-| THB | PHP | reference | 1.8997 |
-| TWD | PHP | reference | 1.9767 |
-| USD | PHP | reference | 64.061 |
-| VES | PHP | reference | 0.0723 |
-| ZAR | PHP | reference | 3.8574 |
+| MXN | PHP | reference | 3.3895 |
+| MYR | PHP | reference | 15.7388 |
+| NOK | PHP | reference | 6.9228 |
+| NZD | PHP | reference | 35.9487 |
+| PKR | PHP | reference | 0.231 |
+| SAR | PHP | reference | 17.015 |
+| SEK | PHP | reference | 6.4921 |
+| SGD | PHP | reference | 49.9038 |
+| SYP | PHP | reference | 0.5255 |
+| THB | PHP | reference | 1.8947 |
+| TWD | PHP | reference | 1.9643 |
+| USD | PHP | reference | 63.852 |
+| VES | PHP | reference | 0.072 |
+| ZAR | PHP | reference | 3.8462 |
 
 </details>
 

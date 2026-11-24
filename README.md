@@ -32,41 +32,41 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-23 by Bangko Sentral ng Pilipinas — 31 rates. Updated 2026-11-23.</summary>
+<summary>Table as text: published 2026-11-24 by Bangko Sentral ng Pilipinas — 31 rates. Updated 2026-11-24.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | PHP | reference | 17.3856 |
+| AED | PHP | reference | 17.3905 |
 | ARS | PHP | reference | 0.0404 |
-| AUD | PHP | reference | 42.27 |
-| BHD | PHP | reference | 169.3013 |
-| BND | PHP | reference | 49.3447 |
-| BRL | PHP | reference | 10.7336 |
-| CAD | PHP | reference | 44.5179 |
-| CHF | PHP | reference | 76.0143 |
-| CNY | PHP | reference | 9.571 |
-| DKK | PHP | reference | 9.3704 |
-| EUR | PHP | reference | 70.0329 |
-| GBP | PHP | reference | 83.5887 |
-| HKD | PHP | reference | 8.1455 |
+| AUD | PHP | reference | 42.3156 |
+| BHD | PHP | reference | 169.3305 |
+| BND | PHP | reference | 49.258 |
+| BRL | PHP | reference | 10.7693 |
+| CAD | PHP | reference | 44.4759 |
+| CHF | PHP | reference | 75.8919 |
+| CNY | PHP | reference | 9.5794 |
+| DKK | PHP | reference | 9.3157 |
+| EUR | PHP | reference | 69.6298 |
+| GBP | PHP | reference | 83.239 |
+| HKD | PHP | reference | 8.143 |
 | IDR | PHP | reference | 0.0035 |
-| INR | PHP | reference | 0.689 |
-| JPY | PHP | reference | 0.4027 |
-| KRW | PHP | reference | 0.0474 |
-| MXN | PHP | reference | 3.3352 |
-| MYR | PHP | reference | 15.5358 |
-| NOK | PHP | reference | 6.5493 |
-| NZD | PHP | reference | 34.8887 |
-| PKR | PHP | reference | 0.2312 |
-| SAR | PHP | reference | 17.0199 |
-| SEK | PHP | reference | 6.2528 |
-| SGD | PHP | reference | 49.5361 |
-| SYP | PHP | reference | 0.5254 |
-| THB | PHP | reference | 1.8825 |
-| TWD | PHP | reference | 1.937 |
-| USD | PHP | reference | 63.852 |
+| INR | PHP | reference | 0.6874 |
+| JPY | PHP | reference | 0.4016 |
+| KRW | PHP | reference | 0.0476 |
+| MXN | PHP | reference | 3.3324 |
+| MYR | PHP | reference | 15.5007 |
+| NOK | PHP | reference | 6.4955 |
+| NZD | PHP | reference | 34.7989 |
+| PKR | PHP | reference | 0.2313 |
+| SAR | PHP | reference | 17.0206 |
+| SEK | PHP | reference | 6.2157 |
+| SGD | PHP | reference | 49.4487 |
+| SYP | PHP | reference | 0.5256 |
+| THB | PHP | reference | 1.8801 |
+| TWD | PHP | reference | 1.9468 |
+| USD | PHP | reference | 63.863 |
 | VES | PHP | reference | 0.0696 |
-| ZAR | PHP | reference | 3.6309 |
+| ZAR | PHP | reference | 3.6709 |
 
 </details>
 
